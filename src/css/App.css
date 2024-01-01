@@ -3,6 +3,7 @@
   --navbar:#DAAC02;
   --text:#FFFFFF;
   --button:#3ABECA;
+  --bg-clr:#FAC300;
 }
 
 /* Topbar CSS Starts here*/
@@ -18,3 +19,9 @@
   text-decoration: none !important;
 }
 
+
+/* Navbar CSS starts here */
+
+.nav-bg{
+  background-color: var(--navbar);
+}
