@@ -48,24 +48,25 @@ const TopBar = () => {
                         {/* Left body of the topbar */}
 
                         <div className="me-3 d-flex align-items-center " onClick={handlePhoneClick} style={{ cursor: 'pointer' }}>
-                            <FontAwesomeIcon icon={faPhone} className="px-2" />                
+                            <FontAwesomeIcon icon={faPhone} className="px-2 " />                
                             <span className="d-none d-lg-inline">{phoneNumber}</span>
                         </div>
+
                         <div className="me-3 d-flex align-items-center" onClick={handleEmailClick} style={{ cursor: 'pointer' }}>
-                            <FontAwesomeIcon icon={faEnvelope} className="px-2" />
+                            <FontAwesomeIcon icon={faEnvelope} className="px-2  " />
                             <span className="d-none d-lg-inline">{email}</span>
                         </div>
 
                         <div className="me-3 d-flex align-items-center">
                             {/* WhatsApp icon with click handler */}
                             <a href="#" className="text-light mr-3" onClick={handleWhatsappClick} >
-                                <FontAwesomeIcon icon={faWhatsapp} className="px-2" />
+                                <FontAwesomeIcon icon={faWhatsapp} className="px-2 " />
                                 <span className="d-none d-lg-inline">+971528244497</span>
                             </a>
                         </div>
 
                         <div className=" me-3 d-flex align-items-center">
-                        <FontAwesomeIcon icon={faLocationDot} className="px-2" />
+                        <FontAwesomeIcon icon={faLocationDot} className="px-2 " />
                             <span className="d-none d-lg-inline">Dubai</span>
                         </div>
                     </div>
