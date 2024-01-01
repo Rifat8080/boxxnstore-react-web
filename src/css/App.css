@@ -13,3 +13,8 @@
   font-size: 16;
   font-weight: 500;
 }
+
+.topbar a.text-light {
+  text-decoration: none !important;
+}
+
