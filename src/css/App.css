@@ -19,9 +19,54 @@
   text-decoration: none !important;
 }
 
+/* .icon-background {
+  background-color: var(--button);
+  padding: 5px 10px;
+  border-radius: 50%;
+} */
+
+
+
 
 /* Navbar CSS starts here */
 
 .nav-bg{
   background-color: var(--navbar);
+}
+
+img.logo-size.img-fluid{
+  max-height: 100px;
+  max-width: 150px;
+}
+
+a.navlink.nav-link{
+  color: var(--text);
+  font-size: 20;
+  font-weight: 700;
+}
+
+a.nav-link{
+  color: var(--text);
+  font-size: 20;
+  font-weight: 700;
+}
+
+.form-control{
+  color: var(--text);
+}
+
+.searchicon{
+  background:border-box;
+  background-color: var(--button);
+  padding: 10px 10px;
+  color: var(--text);
+}
+
+button.btn-primary.getq{
+  background: var(--button);
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+  padding: 10px 24px;
+  
 }

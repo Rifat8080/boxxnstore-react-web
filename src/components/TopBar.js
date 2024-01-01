@@ -69,22 +69,27 @@ const TopBar = () => {
                         <FontAwesomeIcon icon={faLocationDot} className="px-2 " />
                             <span className="d-none d-lg-inline">Dubai</span>
                         </div>
+
+                        <div className=" me-3 d-flex align-items-center">
+                        <FontAwesomeIcon icon={faLocationDot} className="px-2 " />
+                            <span className="d-none d-lg-inline">Timing : 8 am - 10 pm</span>
+                        </div>
                     </div>
 
 
                     {/* Right body of the topbar */}
                         
-                    <div className="d-flex align-items-center ">
-                        <a href="#" className="text-light me-3">
+                    <div className="d-flex align-items-center">
+                        <a href="#" className="text-light me-3 icon-background">
                             <FontAwesomeIcon icon={faFacebook} />
                         </a>
-                        <a href="#" className="text-light me-3">
+                        <a href="#" className="text-light me-3 icon-background">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
-                        <a href="#" className="text-light me-3">
+                        <a href="#" className="text-light me-3 icon-background">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                        <a href="#" className="text-light me-3">
+                        <a href="#" className="text-light me-3 icon-background">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </div>
