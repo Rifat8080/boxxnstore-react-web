@@ -1,12 +1,17 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
-import React from "react";
+import React,{useState} from "react";
 import '../css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import  MyVerticallyCenteredModal from '../components/modal'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// Import from the appropriate package, in this case, free-brands-svg-icons
+import { faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 
 
 import image1 from './assets/1.jpg';
@@ -14,10 +19,12 @@ import image2 from './assets/2.jpg';
 import image3 from './assets/3.jpg';
 
 const HeaderCarousel = () => {
+
+
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
       <Carousel data-bs-theme="light">
-      
         <Carousel.Item className='c-height d-flex ' >
           <Image
             className="d-block  w-100"  // Combine classes in a single string
@@ -51,60 +58,91 @@ const HeaderCarousel = () => {
 
               <Row className='cards-info' style={{ marginTop:'55px' }}>
 
-              <Col xs={12} md={3} lg={3}>
-                  <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)'}}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+              <Col xs={3} md={3} lg={3}>
+                  <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}>
+                  <FontAwesomeIcon
+                                icon={faMagnifyingGlass}
+                                className=""
+                                style={{ color: 'white' }}
+                              />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Card.Title>RESIDENTIAL STORAGE</Card.Title>
+                      <Button variant="primary" onClick={() => setModalShow(true)}>
+                        More Info
+                      </Button>
+
+                      <MyVerticallyCenteredModal
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                      />
                     </Card.Body>
                   </Card>
                 </Col>
 
-                <Col xs={12} md={3} lg={3}>
-                  <Card style={{ }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                <Col xs={3} md={3} lg={3}>
+                  <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}>
+                  <FontAwesomeIcon
+                                icon={faMagnifyingGlass}
+                                className=""
+                                style={{ color: 'white' }}
+                              />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Card.Title>STORAGE BY THE BOX</Card.Title>
+                      <Button variant="primary" onClick={() => setModalShow(true)}>
+                        More Info
+                      </Button>
+
+                      <MyVerticallyCenteredModal
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                      />
                     </Card.Body>
                   </Card>
                 </Col>
 
-                <Col xs={12} md={3} lg={3}>
-                  <Card style={{ }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                <Col xs={3} md={3} lg={3}>
+                  <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}>
+                  <FontAwesomeIcon
+                                icon={faMagnifyingGlass}
+                                className=""
+                                style={{ color: 'white' }}
+                              />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Card.Title>SUITCASE STORAGE
+                      </Card.Title>
+                      <Button variant="primary" onClick={() => setModalShow(true)}>
+                        More Info
+                      </Button>
+
+                      <MyVerticallyCenteredModal
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                      />
                     </Card.Body>
                   </Card>
                 </Col>
 
-
-                <Col xs={12} md={3} lg={3}>
-                  <Card style={{ }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                <Col xs={3} md={3} lg={3}>
+                  <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}>
+                  <FontAwesomeIcon
+                                icon={faMagnifyingGlass}
+                                className=""
+                                style={{ color: 'white' }}
+                              />
                     <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                      </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Card.Title>OFFICE STORAGE</Card.Title>
+                      <Button variant="primary" onClick={() => setModalShow(true)}>
+                        More Info
+                      </Button>
+
+                      <MyVerticallyCenteredModal
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                      />
                     </Card.Body>
                   </Card>
                 </Col>
 
-              
 
               
               </Row>

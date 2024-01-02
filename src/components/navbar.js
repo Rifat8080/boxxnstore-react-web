@@ -9,8 +9,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image'; 
 import logo from './assets/logo.png'; 
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import from the appropriate package, in this case, free-brands-svg-icons
 import { faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
@@ -22,7 +20,7 @@ const NavHead =()=>{
 
   const handleSearch = () => {
     const inputValue = searchInputRef.current.value;
-
+    
   };
     return(
       <>
