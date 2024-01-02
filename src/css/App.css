@@ -34,6 +34,7 @@
   background-color: var(--navbar);
 }
 
+
 img.logo-size.img-fluid{
   max-height: 100px;
   max-width: 150px;
@@ -70,3 +71,45 @@ button.btn-primary.getq{
   padding: 10px 24px;
   
 }
+
+div.dropdown-menu.show{
+  background-color: var(--navbar);
+  
+}
+
+a.dropdown-item{
+  color: var(--text);
+  font-size: 20;
+  font-weight: 700;
+}
+
+.c-height{
+  max-height:80vh;
+  color:var(--text);
+}
+
+.carousel .carousel-indicators button {
+  background-color: #3ABECA; /* Change to your desired indicator color */
+  border-radius:50%;
+  width:10px;
+  height:10px;
+} 
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Change the alpha value to adjust the transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h2, .overlay h5, .overlay p, .overlay button {
+  color: white;
+  text-align: center;
+}
+

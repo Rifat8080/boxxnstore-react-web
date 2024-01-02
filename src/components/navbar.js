@@ -1,14 +1,15 @@
-import React from "react";
+import React, {useRef} from "react";
 import '../css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+import { InputGroup, FormControl } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image'; 
 import logo from './assets/logo.png'; 
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import from the appropriate package, in this case, free-brands-svg-icons
@@ -16,7 +17,15 @@ import { faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 
 
 const NavHead =()=>{
+
+  const searchInputRef = useRef(null);
+
+  const handleSearch = () => {
+    const inputValue = searchInputRef.current.value;
+
+  };
     return(
+      <>
             <Navbar expand="lg" className="nav-bg p-3">
               <Container >
                 <Navbar.Brand href="#">  <Image src={logo} alt="Logo" fluid className="logo-size" /></Navbar.Brand>
@@ -42,23 +51,27 @@ const NavHead =()=>{
                     </NavDropdown>
                     <Nav.Link href="#action9">Contact us</Nav.Link>
                   </Nav>
-                  <Form className="d-flex align-items-center searchbox">
-      <Form.Control
-        type="search"
-        placeholder="Search"
-        className="me-2"
-        aria-label="Search"
-        style={{ color: '#000000', backgroundColor: '#FAC300' }}
-      />
-      <button type="button" className="btn search-btn">
-        <FontAwesomeIcon icon={faMagnifyingGlass} className="searchicon" />
-      </button>
-    </Form>
-                  <Button className="btn-primary getq">GET A QUOTE</Button>
+                  <InputGroup className="me-3" style={{ maxWidth: '300px', backgroundColor:'#FAC300',border:'none', borderRadius:'4px',color:'white' }}>
+                    <FormControl
+                      id="search-input"
+                      type="search"
+                      placeholder="Search"
+                      ref={searchInputRef}
+                      style={{ backgroundColor: '#FAC300', border:'none',  color: 'white'}}
+                    />
+                    <Button id="search-button" variant="primary" onClick={handleSearch}style={{ backgroundColor: '#3ABECA',border:'none' }}>
+                    <FontAwesomeIcon
+                                icon={faMagnifyingGlass}
+                                className=""
+                                style={{ color: 'white' }}
+                              />
+                    </Button>
+                  </InputGroup>
+                  <Button className="btn-primary getq mt-sm-2">GET A QUOTE</Button>
                 </Navbar.Collapse>
               </Container>
             </Navbar>
-        
+</>
     )
 }
 

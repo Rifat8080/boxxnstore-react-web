@@ -3,7 +3,7 @@ import '../css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import from the appropriate package, in this case, free-brands-svg-icons
-import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faLocationDot,faClock } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const TopBar = () => {
@@ -71,7 +71,7 @@ const TopBar = () => {
                         </div>
 
                         <div className=" me-3 d-flex align-items-center">
-                        <FontAwesomeIcon icon={faLocationDot} className="px-2 " />
+                        <FontAwesomeIcon icon={faClock} className="px-2 " />
                             <span className="d-none d-lg-inline">Timing : 8 am - 10 pm</span>
                         </div>
                     </div>
