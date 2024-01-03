@@ -11,8 +11,9 @@ import {ModalOne, ModalTwo, ModalThree, ModalFour, ModalFive}  from '../componen
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import from the appropriate package, in this case, free-brands-svg-icons
-import { faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
-
+import { faMagnifyingGlass, faWarehouse} from '@fortawesome/free-solid-svg-icons';
+import { FaCartFlatbedSuitcase, FaBoxesPacking } from "react-icons/fa6";
+import { MdWarehouse } from "react-icons/md";
 
 import image1 from './assets/1.jpg';
 import image2 from './assets/2.jpg';
@@ -59,17 +60,18 @@ const HeaderCarousel = () => {
               for all your possible storage needs.Simple, Fast and Affordable storage 
               services.</p>
 
-              <Row className='cards-info' style={{ marginTop:'55px' }}>
+              <Row className='cards-info d-flex justify-content-center align-items-center' style={{ marginTop:'55px' }}>
 
-              <Col xs={3} md={3} lg={3}>
+              <Col xs={3} md={3} lg={3} xl={3}>
                   <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}>
-                  <FontAwesomeIcon
-                                icon={faMagnifyingGlass}
-                                className=""
-                                style={{ color: 'white' }}
-                              />
+                 
                     <Card.Body>
-                      <Card.Title>RESIDENTIAL STORAGE</Card.Title>
+                    <FontAwesomeIcon
+                                icon={faWarehouse}
+                                className="mb-3"
+                                style={{ color: 'white', fontSize:'3.5em' }}
+                              />
+                      <Card.Title style={{color:'white'}}>RESIDENTIAL STORAGE</Card.Title>
                       <Button variant="primary" onClick={() => setModalShowOne(true)}>
                         More Info
                       </Button>
@@ -82,15 +84,12 @@ const HeaderCarousel = () => {
                   </Card>
                 </Col>
 
-                <Col xs={3} md={3} lg={3}>
+                <Col xs={3} md={3} lg={3} xl={3}>
                   <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}>
-                  <FontAwesomeIcon
-                                icon={faMagnifyingGlass}
-                                className=""
-                                style={{ color: 'white' }}
-                              />
+
                     <Card.Body>
-                      <Card.Title>STORAGE BY THE BOX</Card.Title>
+                    <MdWarehouse style={{ color: 'white', fontSize:'4.5em' }}/>
+                      <Card.Title style={{color:'white'}}>STORAGE BY THE BOX</Card.Title>
                       <Button variant="primary" onClick={() => setModalShowTwo(true)}>
                         More Info
                       </Button>
@@ -103,15 +102,13 @@ const HeaderCarousel = () => {
                   </Card>
                 </Col>
 
-                <Col xs={3} md={3} lg={3}>
+                <Col xs={3} md={3} lg={3} xl={3}>
                   <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}>
-                  <FontAwesomeIcon
-                                icon={faMagnifyingGlass}
-                                className=""
-                                style={{ color: 'white' }}
-                              />
+                  
                     <Card.Body>
-                      <Card.Title>SUITCASE STORAGE
+                      
+                      <FaCartFlatbedSuitcase style={{ color: 'white', fontSize:'4.5em' }} />
+                      <Card.Title style={{color:'white'}}>SUITCASE STORAGE
                       </Card.Title>
                       <Button variant="primary" onClick={() => setModalShowThree(true)}>
                         More Info
@@ -125,15 +122,13 @@ const HeaderCarousel = () => {
                   </Card>
                 </Col>
 
-                <Col xs={3} md={3} lg={3}>
+                <Col xs={3} md={3} lg={3} xl={3}>
                   <Card style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}>
-                  <FontAwesomeIcon
-                                icon={faMagnifyingGlass}
-                                className=""
-                                style={{ color: 'white' }}
-                              />
+                  
                     <Card.Body>
-                      <Card.Title>OFFICE STORAGE</Card.Title>
+                    <FaBoxesPacking  className=""
+                                style={{ color: 'white' ,fontSize:'4.5em'}} />
+                      <Card.Title style={{color:'white'}}>OFFICE STORAGE</Card.Title>
                       <Button variant="primary" onClick={() => setModalShowFour(true)}>
                         More Info
                       </Button>
