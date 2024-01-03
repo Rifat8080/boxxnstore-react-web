@@ -1,13 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
-import React,{useState} from "react";
+import React, { useState } from "react";
 import '../css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import  MyVerticallyCenteredModal from '../components/modal'
+import {ModalOne, ModalTwo, ModalThree, ModalFour, ModalFive}  from '../components/modal'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import from the appropriate package, in this case, free-brands-svg-icons
@@ -20,8 +20,11 @@ import image3 from './assets/3.jpg';
 
 const HeaderCarousel = () => {
 
-
-  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShowOne, setModalShowOne] = useState(false);
+  const [modalShowTwo, setModalShowTwo] = useState(false);
+  const [modalShowThree, setModalShowThree] = useState(false);
+  const [modalShowFour, setModalShowFour] = useState(false);
+  const [modalShowFive, setModalShowFive] = useState(false);
   return (
     <>
       <Carousel data-bs-theme="light">
@@ -35,7 +38,7 @@ const HeaderCarousel = () => {
 
           <div className="overlay">
           <Carousel.Caption style={{ fontWeight:'900', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-            <h2 style={{ fontSize: '3.5em', marginBottom:'55px' }}>Welcome to The Ultimate Smart Storage Solution</h2>
+            <h2 style={{ fontSize: '2.9em', marginBottom:'40px', width:'100%' }}>Welcome to The Ultimate Smart Storage Solution</h2>
             <button className="btn btn-primary">Book Now</button>
           </Carousel.Caption>
           </div>
@@ -67,13 +70,13 @@ const HeaderCarousel = () => {
                               />
                     <Card.Body>
                       <Card.Title>RESIDENTIAL STORAGE</Card.Title>
-                      <Button variant="primary" onClick={() => setModalShow(true)}>
+                      <Button variant="primary" onClick={() => setModalShowOne(true)}>
                         More Info
                       </Button>
 
-                      <MyVerticallyCenteredModal
-                        show={modalShow}
-                        onHide={() => setModalShow(false)}
+                      <ModalOne
+                        show={modalShowOne}
+                        onHide={() => setModalShowOne(false)}
                       />
                     </Card.Body>
                   </Card>
@@ -88,13 +91,13 @@ const HeaderCarousel = () => {
                               />
                     <Card.Body>
                       <Card.Title>STORAGE BY THE BOX</Card.Title>
-                      <Button variant="primary" onClick={() => setModalShow(true)}>
+                      <Button variant="primary" onClick={() => setModalShowTwo(true)}>
                         More Info
                       </Button>
 
-                      <MyVerticallyCenteredModal
-                        show={modalShow}
-                        onHide={() => setModalShow(false)}
+                      <ModalTwo
+                        show={modalShowTwo}
+                        onHide={() => setModalShowTwo(false)}
                       />
                     </Card.Body>
                   </Card>
@@ -110,13 +113,13 @@ const HeaderCarousel = () => {
                     <Card.Body>
                       <Card.Title>SUITCASE STORAGE
                       </Card.Title>
-                      <Button variant="primary" onClick={() => setModalShow(true)}>
+                      <Button variant="primary" onClick={() => setModalShowThree(true)}>
                         More Info
                       </Button>
 
-                      <MyVerticallyCenteredModal
-                        show={modalShow}
-                        onHide={() => setModalShow(false)}
+                      <ModalThree
+                        show={modalShowThree}
+                        onHide={() => setModalShowThree(false)}
                       />
                     </Card.Body>
                   </Card>
@@ -131,13 +134,13 @@ const HeaderCarousel = () => {
                               />
                     <Card.Body>
                       <Card.Title>OFFICE STORAGE</Card.Title>
-                      <Button variant="primary" onClick={() => setModalShow(true)}>
+                      <Button variant="primary" onClick={() => setModalShowFour(true)}>
                         More Info
                       </Button>
 
-                      <MyVerticallyCenteredModal
-                        show={modalShow}
-                        onHide={() => setModalShow(false)}
+                      <ModalFour
+                        show={modalShowFour}
+                        onHide={() => setModalShowFour(false)}
                       />
                     </Card.Body>
                   </Card>
@@ -159,8 +162,19 @@ const HeaderCarousel = () => {
           />
            <div className="overlay">
           <Carousel.Caption style={{ fontWeight:'900', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h2 style={{ fontSize: '3.5em', marginBottom:'75px' }} >Movers & Packers</h2>
+            <p>Boxxnstore is a Dubai’s professional movers company. We provide moving services in Dubai, Sharjah & Ajman.
+                    Possessing countless satisfied residential and commercial clientele, Boxxnstore is Dubai’s elite 
+                    movers and packers. With our onboard insurance,
+                    high-quality packing materials and professional staff look no further.</p>
+                      <Button variant="primary" onClick={() => setModalShowFive(true)}>
+                      More Info
+                      </Button>
+
+                      <ModalFive
+                        show={modalShowFive}
+                        onHide={() => setModalShowFive(false)}
+                      />
           </Carousel.Caption>
           </div>
         </Carousel.Item>
