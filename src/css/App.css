@@ -140,3 +140,150 @@ a.dropdown-item{
 }
 
 
+/* Cards of top 3 cards css */
+
+
+.ag-courses_box {
+  padding: 25px 0;
+}
+.ag-courses_item {
+  
+  overflow: hidden;
+  border-radius: 28px;
+  text-align: center;
+}
+
+.ag-icon {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--button);
+  transition: color 0.5s ease; /* Add transition for smooth color change */
+  position: relative;
+  z-index: 3;
+}
+
+.ag-courses-item_link {
+  padding: 20px 20px;
+  background-color: var(--text);
+  text-decoration: none;
+  position: relative;
+}
+
+.ag-courses-item_title.card-title {
+  
+  margin: 0 0 25px;
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--button);
+  text-decoration: none;
+  z-index: 3;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 12px;
+  color: var(--button);
+  z-index: 3;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: normal;
+  transition: color .5s ease
+}
+
+.ag-button.btn-primary{
+  z-index: 2;
+  position: relative;
+  background:var(--button);
+  border:none;
+  transition: color 0.5s ease; /* Add transition for smooth color change */
+  margin-top: 60px;
+  justify-content: center;
+
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: var(--button);
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+
+/* Hover settings */
+
+/* Hover settings for the entire card */
+.ag-courses-item_link:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* Hover settings for the title within the card */
+.ag-courses-item_link:hover .ag-courses-item_title {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* Hover settings for the date within the card */
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* Hover settings for the background within the card */
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+/* Hover settings for the button within the card */
+.ag-courses-item_link:hover .ag-button.btn-primary {
+  background: var(--text);
+  color: var(--button);
+}
+
+.ag-courses-item_link:hover .ag-icon {
+  color: var(--text);
+}
+
+/* Media queries */
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
