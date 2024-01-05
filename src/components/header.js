@@ -11,7 +11,7 @@ import {ModalOne, ModalTwo, ModalThree, ModalFour, ModalFive}  from '../componen
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import from the appropriate package, in this case, free-brands-svg-icons
-import { faMagnifyingGlass, faWarehouse} from '@fortawesome/free-solid-svg-icons';
+import { faWarehouse} from '@fortawesome/free-solid-svg-icons';
 import { FaCartFlatbedSuitcase, FaBoxesPacking } from "react-icons/fa6";
 import { MdWarehouse } from "react-icons/md";
 
@@ -71,7 +71,7 @@ const HeaderCarousel = () => {
                                 className="mb-3"
                                 style={{ color: 'white', fontSize:'3.5em' }}
                               />
-                      <Card.Title style={{color:'white'}}>RESIDENTIAL STORAGE</Card.Title>
+                      <Card.Title style={{color:'white'}} className=''>RESIDENTIAL STORAGE</Card.Title>
                       <Button variant="primary" onClick={() => setModalShowOne(true)}>
                         More Info
                       </Button>

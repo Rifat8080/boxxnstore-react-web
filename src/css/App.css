@@ -69,8 +69,34 @@ button.btn-primary.getq{
   border-radius: 40px;
   font-weight: 700;
   padding: 10px 24px;
-  
+  /* position: relative;
+  border-radius: 40px;
+  font-weight: 700;
+  padding: 10px 24px;
+  background: var(--button);
+  border: none;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden; */
 }
+
+
+/* button.btn-primary.getq:hover{
+  color: var(--top-bar);
+}
+
+button.btn-primary.getq::before{
+content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background:var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+} */
+
 
 div.dropdown-menu.show{
   background-color: var(--navbar);
@@ -112,4 +138,5 @@ a.dropdown-item{
   color: white;
   text-align: center;
 }
+
 
