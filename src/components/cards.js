@@ -6,19 +6,19 @@ import { faBoxOpen, faLandmark, faPeopleCarry, faPeopleCarryBox } from '@fortawe
 
 const Courses = () => {
   return (
-    <Container className="ag-format-container">
-      <Row className="ag-courses_box">
+    <Container className="ag-format-container justify-content-center align-items-center">
+      <Row className="ag-courses_box justify-content-center align-items-center">
         {courseItems.map((course, index) => (
           <Col key={index} xxl={4} xl={4} lg={4} md={12
-          } sm={12} xs={12}>
-            <Card className="ag-courses_item">
-              <Card.Link href="#" className="ag-courses-item_link">
+          } sm={12} xs={12} className='d-flex align-items-center justify-content-center'> 
+            <Card className="ag-courses_item text-center mb-lg-5 mb-md-5 mb-sm-5 mb-xsm-5 justify-content-center align-items-center" style={{ width: '25rem',height:'25rem' }} >
+              <Card.Link href="#" className="ag-courses-item_link p-3 className='d-flex justify-content-center align-items-center flex-column'">
                 <div className="ag-courses-item_bg"></div>
                 <div className='ag-icon'>
                 <FontAwesomeIcon  icon={course.icon}/>
                 </div>
                  
-                <Card.Body>
+                <Card.Body >
                   <Card.Title className="ag-courses-item_title" style={{color:'#FFFFF'}}>
                     {course.title}
                   </Card.Title>
@@ -46,7 +46,7 @@ const Courses = () => {
 const courseItems = [
   {
     title: 'STORAGE',
-    startDate: 'Our advanced storage facilities are designed to provide a variety of storage services from lockable storage units of varying sizes to individual storage boxes. We are able to store from a single box to the entire house. With unique bar coding system for office inventory, furniture and document all your office storage requirements are taken care of.',
+    startDate: 'Our advanced storage facilities are designed to provide a variety of storage services from lockable storage units of varying sizes to individual storage boxes.  With unique bar coding system for office inventory, furniture and document all your office storage requirements are taken care of.',
     icon: faLandmark,
   },
   {
