@@ -8,7 +8,7 @@ function Basic() {
     <>
       <Container fluid className="how-works-body py-5  d-flex justify-content-center align-items-center flex-column">
        
-        <div className="how-works-heading text-center pt-5">
+        <div className="how-works-heading text-animate text-center pt-5">
                     <h2>Learn How Our Storage Services Work</h2>
                     <p>And get your requested service in less than 2 minutes</p>
          </div>

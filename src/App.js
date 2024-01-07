@@ -5,6 +5,7 @@ import HeaderCarousel from './components/header.js';
 import Courses from './components/cards.js';
 import BasicInfo from './components/basicInfo.js';
 import Basic from './components/howWorks.js';
+import VideoPlayer from './components/youtube.js';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Courses />
       <BasicInfo />
       <Basic />
+      <VideoPlayer />
     </>
   );
 }

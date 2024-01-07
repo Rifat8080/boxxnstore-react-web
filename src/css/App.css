@@ -406,43 +406,32 @@ a.dropdown-item{
   color: var(--button);
   transition:  0.3s ease-in-out;
 
-}
-/* 
+} 
 
-.basic-info-body .text-animate{
+
+.how-works-body .how-works-heading {
   position: relative;
-  width:32.8rem;
+  width:38rem;
 }
 
-
-.basic-info-body .text-animate h3{
-  
-  font-weight: 700;
+.how-works-body .how-works-heading  h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 2rem;
   color: transparent;
-  -webkit-text-stroke: 1px var(--button);
-  background-image: linear-gradient(var(--text),var(--text));
+  
+  background-image: linear-gradient(var(--button),var(--button));
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: homeBgText 6s linear infinite;
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 
-
-.basic-info-body .text-animate h3::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  border-right: 2px solid var(--main-color);
-  animation: homeCursorText 6s linear infinite;
-  animation-delay: 3s;
-}
 
 @keyframes homeBgText{
   0%,5%,10%,100%{
-      background-position: -35rem 0;
+      background-position: -38rem 0;
   }
 
   65%,85%{
@@ -450,19 +439,20 @@ a.dropdown-item{
   }
 }
 
-@keyframes homeCursorText{
-  0%,5%,10%,100%{
-      width: 0;
-  }
 
-  65%,85%{
-      width: 100%;
-      opacity: 1;
-  }
 
-  75%,81%{
-      opacity: 0;
-  }
+ /* Video player */
+
+ .videoplayer {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio, adjust if needed */
 }
 
- */
+.videoplayer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:75%;
+}
