@@ -340,11 +340,72 @@ a.dropdown-item{
   font-weight: bold
 }
 
+
 .basic-info-cards-button.btn-primary:hover,
 .basic-info-cards-button.btn-primary:focus,
 .basic-info-cards-button.btn-primary:active{
   background: var(--bg-clr);
   color: var(--text);
+}
+
+
+
+/* how works section css */
+
+.how-works-heading h2{
+  color: var(--button);
+  font-weight: bolder;
+}
+
+.how-works-heading p{
+  color: var(--top-bar);
+}
+
+.how-works-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.how-works-body .how-works-card {
+  transition: transform 0.3s ease-in-out;
+  border: none;
+  border: transparent;
+}
+
+.how-works-body .how-works-card .how-works-title{
+  font-weight: bolder;
+  color: var(--button);
+}
+
+.how-works-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--top-bar);
+}
+
+.how-works-icon{
+  font-size: 3rem;
+  color: var(--button);
+}
+
+.how-works-body .how-works-card .how-works-card-button{
+  background: var(--button);
+  color: var(--text);
+  border: none;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.how-works-body .how-works-card:hover .how-works-card-button,
+.how-works-body .how-works-card:hover,
+.how-works-body .how-works-card .how-works-card-button:hover,
+.how-works-body .how-works-card .how-works-card-button:focus {
+  background: transparent;
+  border: 2px solid #3ABECA;
+  color: var(--button);
+  transition:  0.3s ease-in-out;
+
 }
 /* 
 

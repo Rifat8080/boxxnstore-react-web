@@ -13,7 +13,7 @@ function BasicInfo() {
                     <p>
 No deposits, no hidden charges and no need to rent an entire storage unit just pay for what you store. Our smart storage concept is ideal for those with fewer items enabling you to save money, time and energy.</p>
          </div>
-         <Row className="py-5 px-5">
+         <Row className="py-5 px-5 ">
             <Col>
                 <Card className="basic-info-cards" >
                     <Card.Img variant="top" src="https://boxxnstore.com/wp-content/uploads/2022/10/Untitled-2-2048x2048.jpg" />
