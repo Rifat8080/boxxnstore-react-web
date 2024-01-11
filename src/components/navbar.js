@@ -30,7 +30,7 @@ const NavHead =()=>{
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                   <Nav
-                    className="me-auto my-2 my-lg-0"
+                    className="me-auto my-2 my-lg-0 text-nowrap"
                     navbarScroll
                   >
                     <Nav.Link href="#action1" className="navlink">Home</Nav.Link>
@@ -65,7 +65,7 @@ const NavHead =()=>{
                               />
                     </Button>
                   </InputGroup>
-                  <Button className="btn-primary getq mt-sm-2">GET A QUOTE</Button>
+                  <Button className="btn-primary getq mt-sm-2 text-nowrap">GET A QUOTE</Button>
                 </Navbar.Collapse>
               </Container>
             </Navbar>

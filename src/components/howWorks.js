@@ -13,7 +13,8 @@ function Basic() {
                     <p>And get your requested service in less than 2 minutes</p>
          </div>
          <Row className="py-3 px-3">
-            <Col>
+            <Col xxl={4} xl={4} lg={4} md={12
+          } sm={12} xs={12} className="mb-md-1 p-md-5">
                 <Card className="how-works-card text-center p-3" >
                 <FontAwesomeIcon className="how-works-icon" icon={faAddressBook} />
                     <Card.Body>
@@ -26,7 +27,8 @@ function Basic() {
                 </Card>
             </Col>
 
-            <Col>
+            <Col xxl={4} xl={4} lg={4} md={12
+          } sm={12} xs={12} className="mb-md-1 p-md-5">
                 <Card className="how-works-card text-center p-3" >
                 <FontAwesomeIcon className="how-works-icon" icon={faSquareCheck} />
                     <Card.Body>
@@ -39,7 +41,8 @@ function Basic() {
                 </Card>
             </Col>
 
-            <Col>
+            <Col xxl={4} xl={4} lg={4} md={12
+          } sm={12} xs={12} className="p-md-5">
                 <Card className="how-works-card text-center p-3" >
                 <FontAwesomeIcon className="how-works-icon" icon={faHandshake} />
                     <Card.Body>

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import from the appropriate package, in this case, free-brands-svg-icons
 import { faPhone, faEnvelope, faLocationDot,faClock } from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faFacebook, faTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const TopBar = () => {
 
@@ -47,31 +47,31 @@ const TopBar = () => {
 
                         {/* Left body of the topbar */}
 
-                        <div className="me-3 d-flex align-items-center " onClick={handlePhoneClick} style={{ cursor: 'pointer' }}>
-                            <FontAwesomeIcon icon={faPhone} className="px-2 " />                
+                        <div className="me-3 me-lg-1 d-flex align-items-center " onClick={handlePhoneClick} style={{ cursor: 'pointer' }}>
+                            <FontAwesomeIcon icon={faPhone} className="px-2 px-lg-1" />                
                             <span className="d-none d-lg-inline">{phoneNumber}</span>
                         </div>
 
-                        <div className="me-3 d-flex align-items-center" onClick={handleEmailClick} style={{ cursor: 'pointer' }}>
-                            <FontAwesomeIcon icon={faEnvelope} className="px-2  " />
+                        <div className="me-3 me-lg-1 d-flex align-items-center" onClick={handleEmailClick} style={{ cursor: 'pointer' }}>
+                            <FontAwesomeIcon icon={faEnvelope} className="px-2 px-lg-1" />
                             <span className="d-none d-lg-inline">{email}</span>
                         </div>
 
-                        <div className="me-3 d-flex align-items-center">
+                        <div className="me-3 me-lg-1 d-flex align-items-center">
                             {/* WhatsApp icon with click handler */}
                             <a href="#" className="text-light mr-3" onClick={handleWhatsappClick} >
-                                <FontAwesomeIcon icon={faWhatsapp} className="px-2 " />
+                                <FontAwesomeIcon icon={faWhatsapp} className="px-2 px-lg-1" />
                                 <span className="d-none d-lg-inline">+971528244497</span>
                             </a>
                         </div>
 
-                        <div className=" me-3 d-flex align-items-center">
-                        <FontAwesomeIcon icon={faLocationDot} className="px-2 " />
+                        <div className=" me-3 me-lg-1 d-flex align-items-center">
+                        <FontAwesomeIcon icon={faLocationDot} className="px-2 px-lg-1" />
                             <span className="d-none d-lg-inline">Dubai</span>
                         </div>
 
                         <div className=" me-3 d-flex align-items-center">
-                        <FontAwesomeIcon icon={faClock} className="px-2 " />
+                        <FontAwesomeIcon icon={faClock} className="px-2 px-lg-1" />
                             <span className="d-none d-lg-inline">Timing : 8 am - 10 pm</span>
                         </div>
                     </div>
@@ -79,19 +79,31 @@ const TopBar = () => {
 
                     {/* Right body of the topbar */}
                         
-                    <div className="d-flex align-items-center">
-                        <a href="#" className="text-light me-3 icon-background">
+                    <div className="d-flex justify-content-center align-items-center ">
+                        
+                        <div className='topbar-circle d-flex justify-content-center align-items-center me-1'>
+                        <a href="#" className="text-light icon-background">
                             <FontAwesomeIcon icon={faFacebook} />
                         </a>
-                        <a href="#" className="text-light me-3 icon-background">
+                        </div>
+
+                        <div className='topbar-circle d-flex justify-content-center align-items-center me-1'>
+                        <a href="#" className="text-light icon-background">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
-                        <a href="#" className="text-light me-3 icon-background">
+                        </div>
+
+                        <div className='topbar-circle d-flex justify-content-center align-items-center me-1'>
+                        <a href="#" className="text-light  icon-background">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                        <a href="#" className="text-light me-3 icon-background">
-                            <FontAwesomeIcon icon={faLinkedin} />
+                        </div>
+
+                        <div className='topbar-circle d-flex justify-content-center align-items-center me-1 me-lg-0'>
+                        <a href="#" className="text-light icon-background">
+                            <FontAwesomeIcon icon={faYoutube} />
                         </a>
+                        </div>
                     </div>
                 </div>
             </div>

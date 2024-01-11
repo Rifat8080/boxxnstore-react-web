@@ -6,6 +6,7 @@ import Courses from './components/cards.js';
 import BasicInfo from './components/basicInfo.js';
 import Basic from './components/howWorks.js';
 import VideoPlayer from './components/youtube.js';
+import Choose from './components/chooseUs.js';
 
 
 
@@ -13,12 +14,13 @@ function App() {
   return (
     <>
       <TopBar />
-      <NavHead />
+      <NavHead/>
       <HeaderCarousel/>
-      <Courses />
-      <BasicInfo />
-      <Basic />
-      <VideoPlayer />
+      <Courses/>
+      <BasicInfo/>
+      <Basic/>
+      <VideoPlayer/>
+      <Choose/>
     </>
   );
 }

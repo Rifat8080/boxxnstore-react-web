@@ -19,6 +19,16 @@
   text-decoration: none !important;
 }
 
+.topbar-circle{
+  background: var(--button);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .icon-background {
   background-color: var(--button);
   padding: 5px 10px;
@@ -137,6 +147,13 @@ a.dropdown-item{
 .overlay h2, .overlay h5, .overlay p, .overlay button {
   color: white;
   text-align: center;
+}
+
+
+button.btn.btn-primary.book-btn{
+  background: var(--button);
+  border: none;
+  font-weight: bold;
 }
 
 
@@ -454,5 +471,207 @@ a.dropdown-item{
   top: 0;
   left: 0;
   width: 100%;
-  height:75%;
+  height:100%;
+}
+
+
+
+/* Why choose us */
+
+.choose-body{
+  min-height: 90vh;
+  background: var(--bg-clr);
+}
+
+
+.choose-heading h2{
+  color: var(--button);
+  font-weight: bolder;
+}
+
+.choose-heading p{
+  color: var(--top-bar);
+}
+
+.choose-body .choose-card{
+  background: transparent;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.choose-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.choose-icon {
+  font-size: 3rem;
+  color: var(--text);
+ 
+}
+
+.choose-icon-circle{
+  background: var(--button);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-title.card-title.h5{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text);
+  font-weight: bolder;
+}
+
+
+
+/* Breakpoints for Responsive Web */
+
+
+/* Laptop size */
+@media screen and (max-width: 1200px) and (min-width: 993px){
+  
+  /* Header Carousel Responsive Design */
+  .header-car-heading{
+    margin-top: 3rem !important;
+  }
+
+  h2.first-car-header {
+    font-size: 2.5rem !important;
+  }
+
+
+  h2.second-car-header{
+    font-size: 2.5rem !important;
+  }
+
+  h2.third-car-header{
+    font-size: 2.5rem !important;
+    margin-bottom: 10px !important;
+  }
+  
+  p.car-description{
+    font-weight: 500 !important;
+  }
+
+  .cards-info{
+    margin-top: 5px !important;
+}
+
+
+/* Basic smart storage solution responsive */
+
+.basic-des{
+  font-size: 13px !important;
+}
+
+/* How works section */
+
+.choose-title{
+  font-size: 16px !important;
+}
+}
+
+
+
+/* Tablet Size */
+@media screen and (max-width: 992px) and (min-width: 769px){
+  /* Header Carousel Responsive Design */
+  .header-car-heading{
+    margin-top: 5rem !important;
+  }
+
+  h2.first-car-header {
+    font-size: 2rem !important; /* Adjust the font size as needed */
+  }
+
+
+
+  h2.second-car-header{
+    font-size: 2rem !important;
+  }
+
+  h2.third-car-header{
+    font-size: 2rem !important;
+    margin-bottom: 10px !important;
+  }
+  
+  p.car-description{
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+  }
+
+  .cards-info{
+    margin-top: 0px !important;
+}
+
+/* Basic smart storage solution responsive */
+
+.basic-des{
+  font-size: 13px !important;
+}
+
+/* How works section */
+
+.choose-title{
+  font-size: 12px !important;
+}
+
+
+}
+
+
+
+
+/* Mobile-L Size */
+
+@media screen and (max-width: 768px) and (min-width: 577px){
+  /* Header Carousel Responsive Design */
+  .header-car-heading{
+    margin-top: 5rem !important;
+  }
+
+  h2.first-car-header {
+    font-size: 2rem !important; /* Adjust the font size as needed */
+  }
+
+
+
+  h2.second-car-header{
+    font-size: 2rem !important;
+  }
+
+  h2.third-car-header{
+    font-size: 2rem !important;
+    margin-bottom: 10px !important;
+  }
+  
+  p.car-description{
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+  }
+
+  .cards-info{
+    margin-top: 0px !important;
+}
+
+/* Basic smart storage solution responsive */
+
+.basic-des{
+  font-size: 13px !important;
+}
+
+/* How works section */
+
+.choose-title{
+  font-size: 12px !important;
+}
+
+
 }

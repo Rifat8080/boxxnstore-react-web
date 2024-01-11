@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import YouTube from 'react-youtube';
 
+
 const VideoPlayer = () => {
   // Replace 'VIDEO_ID' with the actual ID of your YouTube video
   const videoId = 'bv1om7Sr97I';

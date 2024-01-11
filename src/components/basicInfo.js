@@ -19,7 +19,7 @@ No deposits, no hidden charges and no need to rent an entire storage unit just p
                     <Card.Img variant="top" src="https://boxxnstore.com/wp-content/uploads/2022/10/Untitled-2-2048x2048.jpg" />
                     <Card.Body>
                         <Card.Title className="basic-title">WE COLLECT</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="basic-des">
                         Simply call us or book online and our professionals will pack, wrap, tag and collect all your items with the utmost care and consideration.
                         </Card.Text>
                         <Button variant="primary" className="basic-info-cards-button">Contact us</Button>
@@ -32,7 +32,7 @@ No deposits, no hidden charges and no need to rent an entire storage unit just p
                     <Card.Img variant="top" src="https://boxxnstore.com/wp-content/uploads/2022/10/We-store-resize-2035x2048.jpg" />
                     <Card.Body>
                         <Card.Title className="basic-title">WE STORE</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="basic-des">
                         Unique bar codes will be assigned to each item. Items will be stored in a safe and secure environment with 24/7 surveillance.
                         </Card.Text>
                         <Button variant="primary" className="basic-info-cards-button">Contact us</Button>
@@ -45,7 +45,7 @@ No deposits, no hidden charges and no need to rent an entire storage unit just p
                     <Card.Img variant="top" src="https://boxxnstore.com/wp-content/uploads/2022/10/WE-DELIVER-RESIZE-2048x2048.jpg" />
                     <Card.Body>
                         <Card.Title className="basic-title">WE DELIVER</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="basic-des">
                         Call us or book online, advice us of the delivery address and time. Our staff will deliver at your door step and assist in the unpacking.
 
 

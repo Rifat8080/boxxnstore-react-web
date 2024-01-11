@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card,Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBoxOpen, faLandmark, faPeopleCarry, faPeopleCarryBox } from '@fortawesome/free-solid-svg-icons';
+import { faBoxOpen, faLandmark, faPeopleCarryBox } from '@fortawesome/free-solid-svg-icons';
 
 
 const Courses = () => {
